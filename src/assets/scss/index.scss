@@ -1,11 +1,21 @@
+@import './fonts.scss';
+@import './app.scss';
+@import './utils.scss';
+@import './addItems.scss';
+
 * {
-  box-sizing: border-box;
-}
-body {
-  margin: 0;
+  box-sizing: border-box !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+body {
+  margin: 0;
+  font-family: 'Roboto-Regular';
+  color: #333333;
+}
+.icon{
+  color: #333333;
+}
+
+.box{
+  margin: auto;
 }

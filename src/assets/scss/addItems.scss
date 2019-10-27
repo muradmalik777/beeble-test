@@ -1,0 +1,12 @@
+.add-item{
+    max-width: 50% !important;
+
+    .input{
+        input{
+            padding: 1.7rem;
+        }
+    }
+    .file-input{
+        display: none;
+    }
+}

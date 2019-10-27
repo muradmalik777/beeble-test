@@ -1,17 +1,25 @@
 import React, {useEffect} from 'react';
-import './assets/scss/app.scss';
-import Sidebar from './components/Sidebar/Sidebar';
-import 'antd/dist/antd.css';
+import Navbar from './components/Navbar/Navbar';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import AddItems from './pages/AddItems';
+import Items from './pages/Items';
 
 const App = () => {
 
   useEffect(() => {
-    document.title = "Murad | Portfolio"
+    document.title = "Beeble | Test"
   })
   
   return (
     <div className="app">
-      <Sidebar />
+      <Router>
+        <Navbar />
+
+        <Switch>
+          <Route path={'/addItem'} component={AddItems}/>
+          <Route path={'/'} component={Items} />
+        </Switch>
+      </Router>
     </div>
   );
 }

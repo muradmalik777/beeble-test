@@ -9,4 +9,10 @@
     .file-input{
         display: none;
     }
+    .error{
+        div {background-color: rgb(161, 10, 10);}
+    }
+    .success{
+        div {background-color: rgb(8, 112, 8);}
+    }
 }
